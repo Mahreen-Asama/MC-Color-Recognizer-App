@@ -36,15 +36,23 @@ public class ColorActivity extends AppCompatActivity {
                     case "RED":
                         colorName.setText("WHITE");
                         colorName.setTextColor(Color.WHITE);
-                        layout.setBackgroundColor(Color.LTGRAY);
+                        star.setColorFilter(Color.WHITE);
+                        btnPrev.setBackgroundColor(Color.WHITE);
+                        btnNext.setBackgroundColor(Color.WHITE);
                         break;
                     case "WHITE":
                         colorName.setText("BLACK");
                         colorName.setTextColor(Color.BLACK);
+                        star.setColorFilter(Color.BLACK);
+                        btnPrev.setBackgroundColor(Color.WHITE);
+                        btnNext.setBackgroundColor(Color.WHITE);
                         break;
                     case "BLACK":
                         colorName.setText("GRAY");
                         colorName.setTextColor(Color.GRAY);
+                        star.setColorFilter(Color.GRAY);
+                        btnPrev.setBackgroundColor(Color.GRAY);
+                        btnNext.setBackgroundColor(Color.GRAY);
                         break;
                     case "GRAY":
                         colorName.setText("BROWN");
@@ -65,19 +73,30 @@ public class ColorActivity extends AppCompatActivity {
                     case "PURPLE":
                         colorName.setText("YELLOW");
                         colorName.setTextColor(Color.YELLOW);
+                        star.setColorFilter(Color.YELLOW);
+                        btnPrev.setBackgroundColor(Color.YELLOW);
+                        btnNext.setBackgroundColor(Color.YELLOW);
                         break;
                     case "YELLOW":
                         colorName.setText("BLUE");
                         colorName.setTextColor(Color.BLUE);
+                        star.setColorFilter(Color.BLUE);
+                        btnPrev.setBackgroundColor(Color.BLUE);
+                        btnNext.setBackgroundColor(Color.BLUE);
                         break;
                     case "BLUE":
                         colorName.setText("GREEN");
                         colorName.setTextColor(Color.GREEN);
+                        star.setColorFilter(Color.GREEN);
+                        btnPrev.setBackgroundColor(Color.GREEN);
+                        btnNext.setBackgroundColor(Color.GREEN);
                         break;
                     case "GREEN":
                         colorName.setText("RED");
                         colorName.setTextColor(Color.RED);
-                        layout.setBackgroundColor(Color.WHITE);
+                        star.setColorFilter(Color.RED);
+                        btnPrev.setBackgroundColor(Color.RED);
+                        btnNext.setBackgroundColor(Color.RED);
                         break;
                 }
             }
@@ -92,14 +111,20 @@ public class ColorActivity extends AppCompatActivity {
                     case "RED":
                         colorName.setText("GREEN");
                         colorName.setTextColor(Color.GREEN);
+                        btnPrev.setBackgroundColor(Color.GREEN);
+                        btnNext.setBackgroundColor(Color.GREEN);
                         break;
                     case "GREEN":
                         colorName.setText("BLUE");
                         colorName.setTextColor(Color.BLUE);
+                        btnPrev.setBackgroundColor(Color.BLUE);
+                        btnNext.setBackgroundColor(Color.BLUE);
                         break;
                     case "BLUE":
                         colorName.setText("YELLOW");
                         colorName.setTextColor(Color.YELLOW);
+                        btnPrev.setBackgroundColor(Color.YELLOW);
+                        btnNext.setBackgroundColor(Color.YELLOW);
                         break;
                     case "YELLOW":
                         colorName.setText("PURPLE");
@@ -120,20 +145,26 @@ public class ColorActivity extends AppCompatActivity {
                     case "BROWN":
                         colorName.setText("GRAY");
                         colorName.setTextColor(Color.GRAY);
+                        btnPrev.setBackgroundColor(Color.GRAY);
+                        btnNext.setBackgroundColor(Color.GRAY);
                         break;
                     case "GRAY":
                         colorName.setText("BLACK");
                         colorName.setTextColor(Color.BLACK);
+                        btnPrev.setBackgroundColor(Color.WHITE);
+                        btnNext.setBackgroundColor(Color.WHITE);
                         break;
                     case "BLACK":
                         colorName.setText("WHITE");
                         colorName.setTextColor(Color.WHITE);
-                        layout.setBackgroundColor(Color.LTGRAY);
+                        btnPrev.setBackgroundColor(Color.WHITE);
+                        btnNext.setBackgroundColor(Color.WHITE);
                         break;
                     case "WHITE":
                         colorName.setText("RED");
                         colorName.setTextColor(Color.RED);
-                        layout.setBackgroundColor(Color.WHITE);
+                        btnPrev.setBackgroundColor(Color.RED);
+                        btnNext.setBackgroundColor(Color.RED);
                         break;
                 }
             }

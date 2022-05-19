@@ -5,6 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B2EBF2"
     tools:context=".ColorActivity">
 
     <ImageView
@@ -12,11 +13,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:tint="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_star_24" />
+        app:srcCompat="@drawable/ic_baseline_star_24"
+        tools:ignore="UseAppTint" />
 
     <TextView
         android:id="@+id/name"
@@ -36,6 +40,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF0000"
         android:foreground="@drawable/ic_baseline_skip_previous_24"
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,6 +53,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF0000"
         android:foreground="@drawable/ic_baseline_skip_next_24"
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
