@@ -24,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:text="COLORS"
         android:textColor="#000000"
         android:textSize="96sp"
