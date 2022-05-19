@@ -1,26 +1,32 @@
 package com.example.colorrecognizerforkids;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity {
 
-    ImageView color;
+    ImageView star;
     TextView colorName;
     ImageButton btnPrev,btnNext;
+    ConstraintLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        color=findViewById(R.id.color);
+        star=findViewById(R.id.color);
         colorName=findViewById(R.id.name);
+
+        layout=findViewById(R.id.constraintLayout);
 
         btnPrev=findViewById(R.id.btn_prev);
         btnPrev.setOnClickListener(new View.OnClickListener() {
@@ -34,8 +40,54 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(colorName.equals("RED")){
-                    color.srcCompat="@drawable/ic_baseline_star_24";
+                String color= (String) colorName.getText();
+                switch (color){
+                    case "RED":
+                        colorName.setText("GREEN");
+                        colorName.setTextColor(Color.GREEN);
+                        break;
+                    case "GREEN":
+                        colorName.setText("BLUE");
+                        colorName.setTextColor(Color.BLUE);
+                        break;
+                    case "BLUE":
+                        colorName.setText("YELLOW");
+                        colorName.setTextColor(Color.YELLOW);
+                        break;
+                    case "YELLOW":
+                        colorName.setText("PURPLE");
+                        colorName.setTextColor(Color.parseColor("#6A0DAD"));
+                        break;
+                    case "PURPLE":
+                        colorName.setText("PINK");
+                        colorName.setTextColor(Color.parseColor("FFCOCB"));
+                        break;
+                    case "PINK":
+                        colorName.setText("ORANGE");
+                        colorName.setTextColor(Color.parseColor("FFA500"));
+                        break;
+                    case "ORANGE":
+                        colorName.setText("BROWN");
+                        colorName.setTextColor(Color.parseColor("#964B00"));
+                        break;
+                    case "BROWN":
+                        colorName.setText("GRAY");
+                        colorName.setTextColor(Color.GRAY);
+                        break;
+                    case "GRAY":
+                        colorName.setText("BLACK");
+                        colorName.setTextColor(Color.BLACK);
+                        break;
+                    case "BLACK":
+                        colorName.setText("WHITE");
+                        colorName.setTextColor(Color.WHITE);
+                        layout.setBackgroundColor(Color.LTGRAY);
+                        break;
+                    case "WHITE":
+                        colorName.setText("RED");
+                        colorName.setTextColor(Color.RED);
+                        layout.setBackgroundColor(Color.WHITE);
+                        break;
                 }
             }
         });
