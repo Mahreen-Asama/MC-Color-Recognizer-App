@@ -145,24 +145,24 @@ public class ColorActivity extends AppCompatActivity {
                         break;
                     case "YELLOW":
                         colorName.setText("PURPLE");
-                        colorName.setTextColor(Color.rgb(41,5,67));
-                        star.setColorFilter(Color.rgb(41,5,67));
-                        btnPrev.setBackgroundColor(Color.rgb(41,5,67));
-                        btnNext.setBackgroundColor(Color.rgb(41,5,67));
+                        colorName.setTextColor(Color.rgb(93,63,211));
+                        star.setColorFilter(Color.rgb(93,63,211));
+                        btnPrev.setBackgroundColor(Color.rgb(93,63,211));
+                        btnNext.setBackgroundColor(Color.rgb(93,63,211));
                         break;
                     case "PURPLE":
                         colorName.setText("PINK");
-                        colorName.setTextColor(Color.rgb(100,7,57));
-                        star.setColorFilter(Color.rgb(100,7,57));
-                        btnPrev.setBackgroundColor(Color.rgb(100,7,57));
-                        btnNext.setBackgroundColor(Color.rgb(100,7,57));
+                        colorName.setTextColor(Color.rgb(255,20,147));
+                        star.setColorFilter(Color.rgb(255,20,147));
+                        btnPrev.setBackgroundColor(Color.rgb(255,20,147));
+                        btnNext.setBackgroundColor(Color.rgb(255,20,147));
                         break;
                     case "PINK":
                         colorName.setText("ORANGE");
-                        colorName.setTextColor(Color.rgb(100,64,0));
-                        star.setColorFilter(Color.rgb(100,64,0));
-                        btnPrev.setBackgroundColor(Color.rgb(100,64,0));
-                        btnNext.setBackgroundColor(Color.rgb(100,64,0));
+                        colorName.setTextColor(Color.rgb(255,165,0));
+                        star.setColorFilter(Color.rgb(255,165,0));
+                        btnPrev.setBackgroundColor(Color.rgb(255,165,0));
+                        btnNext.setBackgroundColor(Color.rgb(255,165,0));
                         break;
                     case "ORANGE":
                         colorName.setText("BROWN");
