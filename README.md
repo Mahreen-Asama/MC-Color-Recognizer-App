@@ -1,5 +1,5 @@
 # MC-Color-Recognizer-App
-Color Recognizer App for Kids
+Color Recognizer App for Kids (next, prev buttons to move forward / backward)
 
 
 <table> 
