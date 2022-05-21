@@ -1,7 +1,7 @@
 # MC-Color-Recognizer-App
 Color Recognizer App for Kids
 
-<!--
+
 <table> 
   <tr>
     <td> <h2>Portrait View</h2> </td>
@@ -25,4 +25,4 @@ Color Recognizer App for Kids
   </tr>
 </table>
 
---!>
+
