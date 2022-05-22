@@ -5,6 +5,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -18,6 +19,28 @@ public class ColorActivity extends AppCompatActivity {
     ConstraintLayout layout;
 
     @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("colorName",colorName.getText().toString());
+        Log.d("clrr",Integer.toString(colorName.getCurrentTextColor()));
+        //Color clr=Color.colorName.getCurrentTextColor();
+
+        savedInstanceState.putString("colorValue", String.format("#%06X",(0xFFFFFF & colorName.getCurrentTextColor())));
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        String colornam=savedInstanceState.getString("colorName"); //get clr name
+        colorName.setText(colornam); //set name
+
+        String colorval=savedInstanceState.getString("colorValue");
+        colorName.setTextColor(Color.parseColor(colorval));
+        star.setColorFilter(Color.parseColor(colorval));
+        btnNext.setBackgroundColor(Color.parseColor(colorval));
+        btnPrev.setBackgroundColor(Color.parseColor(colorval));
+    }
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color);
